@@ -1,11 +1,15 @@
 from django.shortcuts import render
-from .models import Experience, Project, Skill
+from .models import Experience, Project, Skill, Profile
 
 
 def home(request):
+    profile = Profile.objects.first()
     skills = Skill.objects.all()
-    return render(request, 'portfolio/home.html', {'skills': skills})
 
+    return render(request, 'portfolio/home.html', {
+        'profile': profile,
+        'skills': skills
+    })
 
 def experience(request):
     experiences = Experience.objects.all()
@@ -23,3 +27,4 @@ def projects(request):
 
 def contact(request):
     return render(request, 'portfolio/contact.html')
+

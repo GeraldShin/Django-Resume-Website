@@ -25,3 +25,12 @@ class Skill(models.Model):
 
     def __str__(self):
         return self.name
+
+class Profile(models.Model):
+    name = models.CharField(max_length=100)
+    title = models.CharField(max_length=200)
+    bio = models.TextField()
+    photo = models.ImageField(upload_to='profile_photos/')
+
+    def __str__(self):
+        return self.name
