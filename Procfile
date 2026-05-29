@@ -1,0 +1,1 @@
+web: gunicorn ResumeWebsite.wsgi --log-file -
