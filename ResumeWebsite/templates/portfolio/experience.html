@@ -1,0 +1,11 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<h1>Experience</h1>
+
+{% for exp in experiences %}
+    <h3>{{ exp.title }} — {{ exp.company }}</h3>
+    <p><strong>{{ exp.duration }}</strong></p>
+    <p>{{ exp.description }}</p>
+{% endfor %}
+{% endblock %}

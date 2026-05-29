@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<h1>Gerald Shin</h1>
+<h2>Analytics Engineering Manager</h2>
+
+<p>
+Data and analytics leader specializing in scalable data platforms,
+analytics engineering, business intelligence, and team leadership.
+</p>
+
+<h3>Skills</h3>
+<ul>
+    {% for skill in skills %}
+        <li>{{ skill.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
