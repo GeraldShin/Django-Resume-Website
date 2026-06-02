@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerald Shin</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <h1>Gerald Shin</h1>
+    <h4>Analytics Engineering Manager</h4>
+
+    <hr>
+
+    <section>
+        <h2>Skills</h2>
+
+        {% for skill in skills %}
+            <span class="badge bg-primary">
+                {{ skill.name }}
+            </span>
+        {% endfor %}
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Experience</h2>
+
+        {% for exp in experiences %}
+            <div class="mb-4">
+                <h4>{{ exp.title }}</h4>
+                <h5>{{ exp.company }}</h5>
+                <p>{{ exp.description }}</p>
+            </div>
+        {% endfor %}
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Projects</h2>
+
+        {% for project in projects %}
+            <div class="mb-4">
+                <h4>{{ project.name }}</h4>
+                <p>{{ project.description }}</p>
+
+                {% if project.github_url %}
+                    <a href="{{ project.github_url }}">
+                        GitHub
+                    </a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </section>
+
+</div>
+
+</body>
+</html>

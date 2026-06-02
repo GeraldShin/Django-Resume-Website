@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="247b8524-de54-4801-952e-df416034085e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="d0867c9e-2bc6-4b91-b800-53ad79c5dc32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/portfolio/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_163805972514.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_163958123331.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_164246958827.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_164608740253.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_165144005778.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_165643098376.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/config.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/media/profile_photos/LinkedIn_PFP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/media/profile_photos/LinkedIn_PFP_zeolqaD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/migrations/0002_profile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/experience.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +50,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -25,9 +60,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="3EPYiPq0VvTRGwkwtmqWABMyzih" />
+  <component name="ProjectId" id="3EaRs3W2qjHWsx1u6flr9bAQMYE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -35,16 +71,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,11 +90,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="247b8524-de54-4801-952e-df416034085e" name="Changes" comment="" />
-      <created>1780081797947</created>
+      <changelist id="d0867c9e-2bc6-4b91-b800-53ad79c5dc32" name="Changes" comment="" />
+      <created>1780414898791</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1780081797947</updated>
+      <updated>1780414898791</updated>
     </task>
     <servers />
   </component>
