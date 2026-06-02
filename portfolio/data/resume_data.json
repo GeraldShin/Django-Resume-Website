@@ -1,0 +1,22 @@
+{
+  "technical_skills": ["Python", "SQL", "Django", "BigQuery", "Dagster"],
+  "soft_skills": ["Software Project Lifecycle Management",
+                  "Developing Engineering Talent",
+                  "Stakeholder Management"
+                  ],
+  "experience": [
+    {
+      "company": "Prime Therapeutics",
+      "title": "Principal Analytics Engineer / Analytics Engineering Manager",
+      "dates": "2023 - Present",
+      "description": "Did some cool stuff"
+    },
+    {
+      "company": "SentinelOne",
+      "title": "Senior Business Intelligence Engineer [Impacted by Layoffs]",
+      "dates": "Sep 2022 - June 2023",
+      "description": "Did some cool stuff here too"
+    }
+  ],
+  "projects": []
+}

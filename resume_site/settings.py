@@ -15,7 +15,9 @@ SECRET_KEY = 'django-insecure-o%e1$!pbpwptc%lekz3j+)w5(=vab@9%1#3=x-vm$^iug$s!hr
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://resumewebsite-1069157667401.us-east1.run.app",
+    '127.0.0.1',
+    'localhost',
+    ".run.app",
     "geraldshin.com",
     "www.geraldshin.com",
 ]
