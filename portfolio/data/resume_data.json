@@ -18,5 +18,11 @@
       "description": "Did some cool stuff here too"
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "name" : "Django Resume Portfolio Website",
+      "description" : "Created Django Resume Website fully created in Python and hosted through Google Cloud Run.\nCI/CD using GitHub actions coming soon.",
+      "github_url" : "https://github.com/GeraldShin/resumewebsite"
+    }
+  ]
 }
