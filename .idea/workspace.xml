@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0867c9e-2bc6-4b91-b800-53ad79c5dc32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/portfolio/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_163805972514.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_163958123331.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_164246958827.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_164608740253.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_165144005778.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/app_versions/app-3a5a-260529_165643098376.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.elasticbeanstalk/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/ResumeWebsite/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/media/profile_photos/LinkedIn_PFP.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/media/profile_photos/LinkedIn_PFP_zeolqaD.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/migrations/0002_profile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/portfolio/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/experience.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResumeWebsite/templates/portfolio/projects.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
