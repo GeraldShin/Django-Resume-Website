@@ -14,8 +14,11 @@ SECRET_KEY = 'django-insecure-o%e1$!pbpwptc%lekz3j+)w5(=vab@9%1#3=x-vm$^iug$s!hr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
-
+ALLOWED_HOSTS = [
+    "https://resumewebsite-1069157667401.us-east1.run.app",
+    "geraldshin.com",
+    "www.geraldshin.com",
+]
 
 # Application definition
 
@@ -76,6 +79,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://resumewebsite-1069157667401.us-east1.run.app",
+    "https://yourdomain.com",
+    "https://www.yourdomain.com",
 ]
 
 AUTH_PASSWORD_VALIDATORS = [
