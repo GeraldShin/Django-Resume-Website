@@ -27,9 +27,10 @@
 
     {
       "name" : "Dagster",
-      "details" : "Creating sensors/event based triggers and standing up quality controlled, robust, pipelines"
+      "details" : "Creating sensors/event based triggers and standing up quality controlled, robust pipelines"
     }
   ],
+
   "soft_skills": [
     {
       "name" : "Software Project Lifecycle Management",
@@ -51,50 +52,61 @@
       "details" : "Writing Confluence documentation, including troubleshooting, FAQs, and technical docs"
     }
   ],
+
   "experience": [
     {
       "company": "Prime Therapeutics",
       "title": "Principal Analytics Engineer / Analytics Engineering Manager",
       "dates": "Aug 2023 - Present",
-      "description": "Did some cool stuff"
+      "description": ["Led analytics engineering strategy and platform modernization initiatives supporting enterprise pricing and underwriting operations.",
+                      "Built scalable production data pipelines using Dagster, Python, SQL, and BigQuery that replaced manual legacy workflows and significantly improved operational efficiency.",
+                      "Managed and mentored analytics engineers while driving architecture standards, engineering processes, and cross-functional data platform initiatives across technical and business stakeholders."
+                      ]
     },
     {
       "company": "SentinelOne",
       "title": "Senior Business Intelligence Engineer",
       "dates": "Sep 2022 - June 2023 [Impacted by Layoffs]",
-      "description": "Did some cool stuff here too"
+      "description": ["Led profitability and revenue analytics initiatives supporting executive leadership across Sales, GTM, and Customer Success organizations.",
+                      "Developed production ETL workflows integrating BigQuery, Salesforce, and operational systems while modernizing spreadsheet-based processes into scalable cloud analytics environments using GCP, Tableau, Terraform, and Spacelift."
+                      ]
     },
     {
       "company": "Signify Health [Acquired by CVS Health]",
       "title": "Senior Business Intelligence Engineer",
       "dates": "May 2020 - Sep 2022",
-      "description": "Wow I ended up doing cool stuff here too"
+      "description": ["Developed executive-facing financial and operational analytics products while automating large-scale reporting workflows using Python, pandas, and PostgreSQL.",
+                      "Reduced significant manual reporting overhead through automation initiatives and helped establish engineering quality standards, dashboard testing practices, and mentorship processes for junior engineers."
+                      ]
     },
     {
       "company": "Highmark Health",
       "title": "Senior Technical Tableau Developer",
       "dates": "Nov 2019 - May 2020 [Contract]",
-      "description": "Did some neat stuff"
+      "description": ["Delivered enterprise analytics dashboards and built reusable Python-based ingestion, transformation, and API integration workflows supporting scalable analytics data sources and reporting solutions."]
     },
     {
       "company": "Intalere [Acquired by Vizient]",
       "title": "Data Engineer",
       "dates": "Mar 2019 - Nov 2019",
-      "description": "Did some neat stuff here too"
+      "description": ["Developed analytics solutions in partnership with business stakeholders while building large-scale PySpark workflows in Databricks against Azure Data Lake environments.",
+                      "Also administered multi-node Tableau Server infrastructure supporting enterprise reporting operations."
+                    ]
     },
     {
       "company": "PSECU",
       "title": "Data Analyst",
       "dates": "2018",
-      "description": "Did some cool stuff here too"
+      "description": ["Built reporting solutions and modernized SQL-based analytics workflows to improve reporting efficiency and business insight generation."]
     },
     {
       "company": "Belco Community Credit Union",
       "title": "Market Research Analyst",
       "dates": "2017-2018",
-      "description": "Did some cool stuff here too"
+      "description": ["Delivered executive-facing market analysis and business insights supporting organizational strategy and decision-making."]
     }
   ],
+
   "projects": [
     {
       "name" : "Django Resume Portfolio Website",

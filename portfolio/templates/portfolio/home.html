@@ -24,7 +24,7 @@
 </nav>
 
 
-<section class="container py-5">
+<section id="home" class="container py-5">
 
     <div class="text-center">
 
@@ -227,7 +227,7 @@ toggleButton.addEventListener("click", () => {
 
 <body>
 
-<div id='home' class="container mt-5">
+<div class="container mt-5">
 
     <h1>Gerald Shin</h1>
     <h4>Analytics Engineering Manager</h4>
@@ -282,15 +282,55 @@ toggleButton.addEventListener("click", () => {
     <hr>
 
     <section id="experience" class="container py-5">
-        <h2>Experience</h2>
-        {% for exp in experience %}
-            <div class="mb-4">
-                <h4>{{ exp.title }}</h4>
-                <h5>{{ exp.company }} - {{ exp.dates }}</h5>
-                <p>{{ exp.description }}</p>
+        <h2 class="mb-5 text-center">
+            Experience
+        </h2>
+
+    {% for exp in experience %}
+
+    <div class="card shadow-sm mb-5 border-0">
+
+        <div class="card-body p-4">
+
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+
+                <div>
+
+                    <h3 class="fw-bold mb-1">
+                        {{ exp.title }}
+                    </h3>
+
+                    <h5 class="text-primary mb-3">
+                        {{ exp.company }}
+                    </h5>
+
+                </div>
+
+                <div class="text-muted">
+                    {{ exp.dates }}
+                </div>
+
             </div>
-        {% endfor %}
-    </section>
+
+            <ul class="mt-3">
+
+                {% for bullet in exp.description %}
+
+                    <li class="mb-2">
+                        {{ bullet }}
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+</section>
 
     <hr>
 
