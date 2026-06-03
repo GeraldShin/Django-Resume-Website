@@ -1,15 +1,56 @@
 {
-  "technical_skills": ["Python",
-                       "SQL",
-                       "Tableau",
-                       "Django",
-                       "BigQuery",
-                       "Dagster"],
-  "soft_skills": ["Software Project Lifecycle Management",
-                  "Developing Engineering Talent",
-                  "Stakeholder Management",
-                  "Creating Detailed & Succinct Documentation"
-                  ],
+  "technical_skills": [
+    {
+      "name" : "Python",
+      "details" : "Creating Data Pipelines, Automating Tasks, Cleaning Data, API Calls, etc."
+    },
+
+    {
+      "name" : "SQL",
+      "details" : "Window functions, CTEs, and more"
+    },
+
+    {
+      "name" : "Tableau",
+      "details" : "Tableau server, prep, desktop - Dashboard creation and management"
+    },
+
+    {
+      "name" : "Django",
+      "details" : "Creating web applications from scratch and deploying to Cloud environments"
+    },
+
+    {
+      "name" : "BigQuery",
+      "details" : "Creating complex PostgreSQL queries, scheduling query jobs"
+    },
+
+    {
+      "name" : "Dagster",
+      "details" : "Creating sensors/event based triggers and standing up quality controlled, robust, pipelines"
+    }
+  ],
+  "soft_skills": [
+    {
+      "name" : "Software Project Lifecycle Management",
+      "details" : "Managing software draft, revision, production stage cycle"
+    },
+
+    {
+      "name" : "Developing Engineering Talent",
+      "details" : "Code reviews, mentorship, career guidance, performance evaluation"
+    },
+
+    {
+      "name" : "Stakeholder Management",
+      "details" : "Cross organization collaboration, customer service"
+    },
+
+    {
+      "name" : "Creating Detailed & Succinct Documentation",
+      "details" : "Writing Confluence documentation, including troubleshooting, FAQs, and technical docs"
+    }
+  ],
   "experience": [
     {
       "company": "Prime Therapeutics",

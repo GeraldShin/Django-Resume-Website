@@ -6,10 +6,10 @@
         <a class="navbar-brand fw-bold me-5" href="#home">Gerald Shin</a>
 
         <div class="d-flex align-items-center gap-4">
-            <a class="nav-link d-inline-block" href="#experience">Experience</a>
-            <a class="nav-link d-inline-block" href="#projects">Projects</a>
             <a class="nav-link d-inline-block" href="#technical skills">Technical Skills</a>
             <a class="nav-link d-inline-block" href="#soft skills">Soft Skills</a>
+            <a class="nav-link d-inline-block" href="#experience">Experience</a>
+            <a class="nav-link d-inline-block" href="#projects">Projects</a>
             <a class="nav-link d-inline-block" href="{% static 'files/GeraldShinResume_v4.6.pdf' %}" download>
                 Download Resume
             </a>
@@ -143,6 +143,39 @@
         opacity: 0.8;
     }
 
+    .soft-skill-btn {
+        background: linear-gradient(
+            135deg,
+            #4f46e5,
+            #7c3aed
+        );
+
+        color: white;
+
+        border: none;
+
+        border-radius: 999px;
+
+        padding: 10px 20px;
+
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        font-size: 1rem;
+        font-weight: 500;
+
+        transition: all 0.25s ease;
+
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .soft-skill-btn:hover {
+        transform: translateY(-2px) scale(1.03);
+
+        box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+
+        opacity: 0.95;
+    }
     </style>
 
 
@@ -202,22 +235,47 @@ toggleButton.addEventListener("click", () => {
     <hr>
 
     <section id="technical skills" class="container py-5">
-        <h2>Technical Skills</h2>
+        <h2>Technical Skills [Click for Details]</h2>
 
         {% for skill in technical_skills %}
-            <span class="badge bg-primary">
-                {{ skill }}
-            </span>
+            <button
+                class="btn btn-outline-primary btn-md mt-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#skill-{{ forloop.counter }}"
+            >
+                {{ skill.name }}
+            </button>
+
+            <div class="collapse mt-2" id="skill-{{ forloop.counter }}">
+                <div class="card card-body">
+                    {{ skill.details }}
+                </div>
+            </div>
         {% endfor %}
     </section>
+
+
     <hr>
+
+
     <section  id="soft skills" class="container py-5">
-        <h2>Soft Skills</h2>
+        <h2>Soft Skills [Click for Details]</h2>
 
         {% for skill in soft_skills %}
-            <span class="badge bg-secondary">
-                {{ skill }}
-            </span>
+            <button
+            class="soft-skill-btn mt-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#softskill-{{ forloop.counter }}"
+        >
+            {{ skill.name }}
+            </button>
+            <div class="collapse mt-2" id="softskill-{{ forloop.counter }}">
+                <div class="card card-body">
+                    {{ skill.details }}
+                </div>
+            </div>
         {% endfor %}
     </section>
 
@@ -255,6 +313,6 @@ toggleButton.addEventListener("click", () => {
     </section>
 
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
