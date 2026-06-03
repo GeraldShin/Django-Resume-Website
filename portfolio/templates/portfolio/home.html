@@ -215,7 +215,7 @@ toggleButton.addEventListener("click", () => {
         <h2>Soft Skills</h2>
 
         {% for skill in soft_skills %}
-            <span class="badge bg-primary">
+            <span class="badge bg-secondary">
                 {{ skill }}
             </span>
         {% endfor %}
@@ -225,7 +225,6 @@ toggleButton.addEventListener("click", () => {
 
     <section id="experience" class="container py-5">
         <h2>Experience</h2>
-
         {% for exp in experience %}
             <div class="mb-4">
                 <h4>{{ exp.title }}</h4>

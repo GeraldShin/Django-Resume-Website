@@ -1,27 +1,63 @@
 {
-  "technical_skills": ["Python", "SQL", "Django", "BigQuery", "Dagster"],
+  "technical_skills": ["Python",
+                       "SQL",
+                       "Tableau",
+                       "Django",
+                       "BigQuery",
+                       "Dagster"],
   "soft_skills": ["Software Project Lifecycle Management",
                   "Developing Engineering Talent",
-                  "Stakeholder Management"
+                  "Stakeholder Management",
+                  "Creating Detailed & Succinct Documentation"
                   ],
   "experience": [
     {
       "company": "Prime Therapeutics",
       "title": "Principal Analytics Engineer / Analytics Engineering Manager",
-      "dates": "2023 - Present",
+      "dates": "Aug 2023 - Present",
       "description": "Did some cool stuff"
     },
     {
       "company": "SentinelOne",
-      "title": "Senior Business Intelligence Engineer [Impacted by Layoffs]",
-      "dates": "Sep 2022 - June 2023",
+      "title": "Senior Business Intelligence Engineer",
+      "dates": "Sep 2022 - June 2023 [Impacted by Layoffs]",
+      "description": "Did some cool stuff here too"
+    },
+    {
+      "company": "Signify Health [Acquired by CVS Health]",
+      "title": "Senior Business Intelligence Engineer",
+      "dates": "May 2020 - Sep 2022",
+      "description": "Wow I ended up doing cool stuff here too"
+    },
+    {
+      "company": "Highmark Health",
+      "title": "Senior Technical Tableau Developer",
+      "dates": "Nov 2019 - May 2020 [Contract]",
+      "description": "Did some neat stuff"
+    },
+    {
+      "company": "Intalere [Acquired by Vizient]",
+      "title": "Data Engineer",
+      "dates": "Mar 2019 - Nov 2019",
+      "description": "Did some neat stuff here too"
+    },
+    {
+      "company": "PSECU",
+      "title": "Data Analyst",
+      "dates": "2018",
+      "description": "Did some cool stuff here too"
+    },
+    {
+      "company": "Belco Community Credit Union",
+      "title": "Market Research Analyst",
+      "dates": "2017-2018",
       "description": "Did some cool stuff here too"
     }
   ],
   "projects": [
     {
       "name" : "Django Resume Portfolio Website",
-      "description" : "Created Django Resume Website fully created in Python and hosted through Google Cloud Run.\nCI/CD using GitHub actions coming soon.",
+      "description" : "You're looking at it!\nCreated Django Resume Website fully created in Python and hosted through Google Cloud Run.\nCI/CD using GitHub actions coming soon.",
       "github_url" : "https://github.com/GeraldShin/resumewebsite"
     }
   ]

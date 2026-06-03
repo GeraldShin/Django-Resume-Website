@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0867c9e-2bc6-4b91-b800-53ad79c5dc32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/portfolio/static/files/GeraldShinResume_v4.6.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/data/resume_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/data/resume_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/home.html" afterDir="false" />
