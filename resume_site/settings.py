@@ -81,8 +81,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://resumewebsite-1069157667401.us-east1.run.app",
-    "https://yourdomain.com",
-    "https://www.yourdomain.com",
+    "https://geraldshin.com",
+    "https://www.geraldshin.com",
 ]
 
 AUTH_PASSWORD_VALIDATORS = [
