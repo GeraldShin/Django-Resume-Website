@@ -176,6 +176,15 @@
 
         opacity: 0.95;
     }
+
+    .experience-dates {
+        color: #6c757d;
+        font-weight: 500;
+    }
+
+    .dark-mode .experience-dates {
+        color: #9ec5fe;
+    }
     </style>
 
 
@@ -306,7 +315,7 @@ toggleButton.addEventListener("click", () => {
 
                 </div>
 
-                <div class="text-muted">
+                <div class="experience-dates mb-3">
                     {{ exp.dates }}
                 </div>
 
