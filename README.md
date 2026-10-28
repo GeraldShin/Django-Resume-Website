@@ -101,7 +101,7 @@ After making changes, run `python manage.py check`, review the page at desktop a
 
 ## Deployment with Cloud Build and Cloud Run
 
-The pipeline in `cloudbuild.yaml` builds and checks the application container, publishes it, and deploys it to the existing Cloud Run service. Automatic deployment requires the GitHub connection and trigger described below.
+The pipeline in `cloudbuild.yaml` builds and checks the application container, publishes it, and deploys it to the existing Cloud Run service. The `resumewebsite-master` GitHub push trigger runs this pipeline for commits to `master`.
 
 ```mermaid
 flowchart LR
@@ -129,16 +129,15 @@ flowchart LR
 
 The configuration uses a unique build ID for each image, runs Django's system check before pushing it, and sends build logs to Cloud Logging. Deployment updates the existing service without changing its public access policy.
 
-### Connection status and setup
+### Connected GitHub trigger
 
-During the CI/CD review, Cloud Build reported that the GitHub repository mapping was missing. The pipeline file alone does not enable automatic deployment. Complete these steps before expecting pushes to deploy:
+The `resumewebsite-master` trigger is configured in `us-east1` for `GeraldShin/Django-Resume-Website`, with the branch filter `^master$` and build configuration `cloudbuild.yaml`.
 
-1. In the website's Google Cloud project, connect `GeraldShin/Django-Resume-Website` to Cloud Build in `us-east1`, authorizing the Google Cloud Build GitHub app for this repository.
-2. Grant the build service account Cloud Run Developer on the existing `resumewebsite` service and Service Account User on the runtime service account. The runtime currently uses the same account. These permissions allow the build to deploy this service as its runtime identity; they are not required merely to build the image.
-3. Create a GitHub push trigger named `resumewebsite-master` with branch filter `^master$`, configuration file `cloudbuild.yaml`, and the build service account above.
-4. Run the trigger against `master`, confirm all four steps succeed, and verify the newly ready Cloud Run revision.
+The existing build account has Cloud Run Developer on the `resumewebsite` service and Service Account User on the existing runtime account. This allows the pipeline to update the service without changing its public access policy.
 
-The last inspected successful build used an uploaded source archive, rather than a GitHub trigger. A successful end-to-end trigger run is still required to verify the repair.
+If automation stops, check the repository connection and branch filter first, then inspect build history and the build account's deployment permissions. The Cloud Build project is the **Django Resume Website** project listed above, which may differ from the active project in a local gcloud configuration.
+
+The pipeline was repaired on October 28, 2026 after Cloud Build reported a missing GitHub repository mapping. Earlier builds used uploaded source archives.
 
 To review a release, inspect the triggered build in **Cloud Build → History**, then check the revision's readiness and traffic assignment in **Cloud Run**. A successful Git push alone does not confirm a successful deployment.
 
