@@ -1,6 +1,6 @@
 # Gerald Shin — Personal Portfolio
 
-A personal résumé and portfolio website presenting my work in analytics engineering, data platforms, and engineering leadership. Built with Django and Python, containerized with Docker, and deployed to Google Cloud Run through Cloud Build CI/CD.
+A personal résumé and portfolio website presenting my work in analytics engineering, data platforms, and engineering leadership. Built with Django and Python, containerized with Docker, and hosted on Google Cloud Run. This repository includes a Cloud Build pipeline for automated deployment.
 
 **[Visit geraldshin.com](https://geraldshin.com)** · [LinkedIn](https://www.linkedin.com/in/geraldshin/) · [GitHub](https://github.com/GeraldShin)
 
@@ -84,6 +84,7 @@ portfolio/
 └── views.py                    # Loads JSON and renders the homepage
 resume_site/                    # Django settings and application entry points
 Dockerfile                      # Container build and Gunicorn startup
+cloudbuild.yaml                 # Build, check, push, and Cloud Run deployment
 manage.py                       # Django management commands
 requirements.txt                # Pinned Python dependencies
 ```
@@ -100,7 +101,7 @@ After making changes, run `python manage.py check`, review the page at desktop a
 
 ## Deployment with Cloud Build and Cloud Run
 
-The deployment workflow connects the GitHub repository to Cloud Build, which builds the application container and deploys it to Cloud Run.
+The pipeline in `cloudbuild.yaml` builds and checks the application container, publishes it, and deploys it to the existing Cloud Run service. Automatic deployment requires the GitHub connection and trigger described below.
 
 ```mermaid
 flowchart LR
@@ -116,7 +117,28 @@ flowchart LR
 3. The pipeline publishes the image to its configured container registry and deploys it as a Cloud Run revision.
 4. Gunicorn runs `resume_site.wsgi:application` with two workers and binds to the `PORT` supplied by Cloud Run.
 
-There is currently no `cloudbuild.yaml` checked into this repository. The connected repository, branch filter, build steps, registry destination, and target service are configured outside this checkout. Check the Cloud Build trigger and Cloud Run service in Google Cloud for their current values; cloning the repository alone does not recreate that configuration.
+### Pipeline configuration
+
+- **Google Cloud project:** `project-219dfe0a-9cad-4fc8-bb9` (Django Resume Website)
+- **Cloud Run service:** `resumewebsite`, region `us-east1`
+- **Repository:** `GeraldShin/Django-Resume-Website`
+- **Trigger branch filter:** `^master$`
+- **Build configuration:** `cloudbuild.yaml`
+- **Image:** `gcr.io/$PROJECT_ID/resumewebsite:$BUILD_ID`
+- **Build service account:** `1069157667401-compute@developer.gserviceaccount.com`
+
+The configuration uses a unique build ID for each image, runs Django's system check before pushing it, and sends build logs to Cloud Logging. Deployment updates the existing service without changing its public access policy.
+
+### Connection status and setup
+
+During the CI/CD review, Cloud Build reported that the GitHub repository mapping was missing. The pipeline file alone does not enable automatic deployment. Complete these steps before expecting pushes to deploy:
+
+1. In the website's Google Cloud project, connect `GeraldShin/Django-Resume-Website` to Cloud Build in `us-east1`, authorizing the Google Cloud Build GitHub app for this repository.
+2. Grant the build service account Cloud Run Developer on the existing `resumewebsite` service and Service Account User on the runtime service account. The runtime currently uses the same account. These permissions allow the build to deploy this service as its runtime identity; they are not required merely to build the image.
+3. Create a GitHub push trigger named `resumewebsite-master` with branch filter `^master$`, configuration file `cloudbuild.yaml`, and the build service account above.
+4. Run the trigger against `master`, confirm all four steps succeed, and verify the newly ready Cloud Run revision.
+
+The last inspected successful build used an uploaded source archive, rather than a GitHub trigger. A successful end-to-end trigger run is still required to verify the repair.
 
 To review a release, inspect the triggered build in **Cloud Build → History**, then check the revision's readiness and traffic assignment in **Cloud Run**. A successful Git push alone does not confirm a successful deployment.
 

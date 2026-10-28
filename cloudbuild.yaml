@@ -1,0 +1,27 @@
+# GitHub trigger: master -> existing resumewebsite Cloud Run service.
+steps:
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/resumewebsite:$BUILD_ID', '.']
+  - id: check
+    name: gcr.io/cloud-builders/docker
+    args: ['run', '--rm', 'gcr.io/$PROJECT_ID/resumewebsite:$BUILD_ID', 'python', 'manage.py', 'check']
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args: ['push', 'gcr.io/$PROJECT_ID/resumewebsite:$BUILD_ID']
+  - id: deploy
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - resumewebsite
+      - --project=$PROJECT_ID
+      - --region=us-east1
+      - --image=gcr.io/$PROJECT_ID/resumewebsite:$BUILD_ID
+      - --quiet
+images:
+  - gcr.io/$PROJECT_ID/resumewebsite:$BUILD_ID
+options:
+  logging: CLOUD_LOGGING_ONLY
+timeout: 1200s
