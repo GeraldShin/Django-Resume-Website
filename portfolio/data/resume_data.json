@@ -1,117 +1,149 @@
 {
   "technical_skills": [
     {
-      "name" : "Python",
-      "details" : "Creating Data Pipelines, Automating Tasks, Cleaning Data, API Calls, etc."
+      "name": "Python",
+      "details": "Creating Data Pipelines, Automating Tasks, Cleaning Data, API Calls, etc."
     },
-
     {
-      "name" : "SQL",
-      "details" : "Window functions, CTEs, and more"
+      "name": "SQL",
+      "details": "Window functions, CTEs, and more"
     },
-
     {
-      "name" : "Tableau",
-      "details" : "Tableau server, prep, desktop - Dashboard creation and management"
+      "name": "Tableau",
+      "details": "Tableau server, prep, desktop - Dashboard creation and management"
     },
-
     {
-      "name" : "Django",
-      "details" : "Creating web applications from scratch and deploying to Cloud environments"
+      "name": "Django",
+      "details": "Creating web applications from scratch and deploying to Cloud environments"
     },
-
     {
-      "name" : "BigQuery",
-      "details" : "Creating complex PostgreSQL queries, scheduling query jobs"
+      "name": "BigQuery",
+      "details": "Optimized SQL transformations, scheduled query jobs, and governed production data assets in BigQuery."
     },
-
     {
-      "name" : "Dagster",
-      "details" : "Creating sensors/event based triggers and standing up quality controlled, robust pipelines"
+      "name": "Dagster",
+      "details": "Creating sensors/event based triggers and standing up quality controlled, robust pipelines"
+    },
+    {
+      "name": "Kubernetes / GKE",
+      "details": "Deployed Dagster on Google Kubernetes Engine using Helm charts."
+    },
+    {
+      "name": "Helm / Poetry",
+      "details": "Helm charts for Dagster deployment and CI/CD using Poetry."
     }
   ],
-
   "soft_skills": [
     {
-      "name" : "Software Project Lifecycle Management",
-      "details" : "Managing software draft, revision, production stage cycle"
+      "name": "Software Project Lifecycle Management",
+      "details": "Managing software draft, revision, production stage cycle"
     },
-
     {
-      "name" : "Developing Engineering Talent",
-      "details" : "Code reviews, mentorship, career guidance, performance evaluation"
+      "name": "Developing Engineering Talent",
+      "details": "Code reviews, mentorship, career guidance, performance evaluation"
     },
-
     {
-      "name" : "Stakeholder Management",
-      "details" : "Cross organization collaboration, customer service"
+      "name": "Stakeholder Management",
+      "details": "Cross organization collaboration, customer service"
     },
-
     {
-      "name" : "Creating Detailed & Succinct Documentation",
-      "details" : "Writing Confluence documentation, including troubleshooting, FAQs, and technical docs"
+      "name": "Creating Detailed & Succinct Documentation",
+      "details": "Writing Confluence documentation, including troubleshooting, FAQs, and technical docs"
     }
   ],
-
   "experience": [
     {
       "company": "Prime Therapeutics",
       "title": "Principal Analytics Engineer / Analytics Engineering Manager",
-      "dates": "Aug 2023 - Present",
-      "description": ["Led analytics engineering strategy and platform modernization initiatives supporting enterprise pricing and underwriting operations.",
-                      "Built scalable production data pipelines using Dagster, Python, SQL, and BigQuery that replaced manual legacy workflows and significantly improved operational efficiency.",
-                      "Managed and mentored analytics engineers while driving architecture standards, engineering processes, and cross-functional data platform initiatives across technical and business stakeholders."
-                      ]
+      "dates": "Mar 2025 – Present",
+      "description": [
+        "Own analytics engineering strategy for pricing and underwriting initiatives supporting enterprise healthcare decision-making.",
+        "Architected and launched a production-grade data pipeline in Kubernetes/GKE using Dagster, Python, SQL, and BigQuery, replacing legacy workflows with tested, scalable data products and eliminating 2,000+ hours of manual work annually.",
+        "Deployed Dagster using Helm charts and implemented CI/CD using Poetry.",
+        "Led modernization of legacy VBA/Excel workflows into a scalable Django application framework.",
+        "Manage and develop analytics engineers through technical mentorship, career development, performance management, and delivery execution.",
+        "Serve as technical lead across analytics, engineering, and business stakeholders; established architecture, documentation, and technical interview standards."
+      ]
+    },
+    {
+      "company": "Prime Therapeutics",
+      "title": "Senior Analytics Engineer",
+      "dates": "Aug 2023 – Feb 2025",
+      "description": [
+        "Rebuilt legacy reporting into self-service analytics products, moving stakeholder access from weekly or monthly cycles to daily.",
+        "Built Python ingestion pipelines against external Medicaid APIs and governed BigQuery production data assets.",
+        "Automated ingestion of 75+ Excel workbook tabs into GCP Cloud Storage and migrated SAS reporting into tested BigQuery reporting layers serving over 40 stakeholders.",
+        "Established delivery standards across GitHub, JIRA, and Confluence and mentored engineers through code review and architecture guidance."
+      ]
     },
     {
       "company": "SentinelOne",
-      "title": "Senior Business Intelligence Engineer",
-      "dates": "Sep 2022 - June 2023 [Impacted by Layoffs]",
-      "description": ["Led profitability and revenue analytics initiatives supporting executive leadership across Sales, GTM, and Customer Success organizations.",
-                      "Developed production ETL workflows integrating BigQuery, Salesforce, and operational systems while modernizing spreadsheet-based processes into scalable cloud analytics environments using GCP, Tableau, Terraform, and Spacelift."
-                      ]
+      "title": "Senior BI Engineer",
+      "dates": "Aug 2022 – Jun 2023",
+      "description": [
+        "Led profitability-by-product analytics supporting leadership across Sales, GTM, and Customer Success in monitoring ARR, product margin, and revenue performance.",
+        "Built production ETL workflows integrating BigQuery, Salesforce, email systems, and operational business data.",
+        "Migrated spreadsheet-driven workflows into governed GCP and Tableau environments and used Terraform and Spacelift to productionize queries, tables, and views."
+      ]
     },
     {
-      "company": "Signify Health [Acquired by CVS Health]",
-      "title": "Senior Business Intelligence Engineer",
-      "dates": "May 2020 - Sep 2022",
-      "description": ["Developed executive-facing financial and operational analytics products while automating large-scale reporting workflows using Python, pandas, and PostgreSQL.",
-                      "Reduced significant manual reporting overhead through automation initiatives and helped establish engineering quality standards, dashboard testing practices, and mentorship processes for junior engineers."
-                      ]
+      "company": "Signify Health",
+      "title": "Senior BI Engineer",
+      "dates": "May 2020 – Aug 2022",
+      "description": [
+        "Built executive-facing financial and operational analytics products supporting strategic decision-making.",
+        "Automated reporting and validation pipelines using Python, pandas, and PostgreSQL, including quarterly reporting packages for over 500 clients.",
+        "Established dashboard QA and engineering practices for code quality, documentation, and repository hygiene; mentored junior engineers."
+      ]
     },
     {
-      "company": "Highmark Health",
-      "title": "Senior Technical Tableau Developer",
-      "dates": "Nov 2019 - May 2020 [Contract]",
-      "description": ["Delivered enterprise analytics dashboards and built reusable Python-based ingestion, transformation, and API integration workflows supporting scalable analytics data sources and reporting solutions."]
+      "company": "Highmark",
+      "title": "Senior Technical Tableau Developer (Contract)",
+      "dates": "Nov 2019 – May 2020",
+      "description": [
+        "Delivered enterprise analytics dashboards across the full product lifecycle.",
+        "Built Python ingestion, transformation, and API integration workflows for reusable analytics data sources."
+      ]
     },
     {
-      "company": "Intalere [Acquired by Vizient]",
+      "company": "Intalere",
       "title": "Data Engineer",
-      "dates": "Mar 2019 - Nov 2019",
-      "description": ["Developed analytics solutions in partnership with business stakeholders while building large-scale PySpark workflows in Databricks against Azure Data Lake environments.",
-                      "Also administered multi-node Tableau Server infrastructure supporting enterprise reporting operations."
-                    ]
+      "dates": "Mar 2019 – Nov 2019",
+      "description": [
+        "Developed analytics products in partnership with business stakeholders.",
+        "Built PySpark workflows in Databricks against large-scale datasets in Azure Data Lake and administered multi-node Tableau Server infrastructure."
+      ]
     },
     {
       "company": "PSECU",
       "title": "Data Analyst",
       "dates": "2018",
-      "description": ["Built reporting solutions and modernized SQL-based analytics workflows to improve reporting efficiency and business insight generation."]
+      "description": [
+        "Built reporting solutions and modernized SQL-based analytics workflows."
+      ]
     },
     {
       "company": "Belco Community Credit Union",
       "title": "Market Research Analyst",
-      "dates": "2017-2018",
-      "description": ["Delivered executive-facing market analysis and business insights supporting organizational strategy and decision-making."]
+      "dates": "2017 – 2018",
+      "description": [
+        "Delivered executive-facing market analysis and business insights."
+      ]
+    },
+    {
+      "company": "Select Medical",
+      "title": "Billing Analyst",
+      "dates": "2016 – 2017",
+      "description": [
+        "Analyzed billing and payment data using Excel and applied payments to patient accounts."
+      ]
     }
   ],
-
   "projects": [
     {
-      "name" : "Django Resume Portfolio Website",
-      "description" : "You're looking at it!\nCreated Django Resume Website fully created in Python and hosted through Google Cloud Run.\nCI/CD using GitHub actions coming soon.",
-      "github_url" : "https://github.com/GeraldShin/resumewebsite"
+      "name": "Personal Portfolio and Resume Platform",
+      "description": "A personal portfolio built with Django and Python and hosted on Google Cloud Run. JSON-driven content keeps professional experience, skills, and projects easy to maintain.",
+      "github_url": "https://github.com/GeraldShin/resumewebsite"
     }
   ]
 }
